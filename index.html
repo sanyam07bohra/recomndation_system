@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Pathfinder Quiz</title>
+    <link rel="stylesheet" href="style.css" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+    <header class="navbar">...</header> <section id="careerQuiz" class="quiz-section">
+        <h2>Career Pathfinder Quiz</h2>
+        <p>Answer the 20 questions below to receive your personalized career roadmap.</p>
+        
+        <form id="quizForm">
+            <div class="quiz-question" data-question-id="Q1">
+                <h3>1. Which stream are you currently in?</h3>
+                <label><input type="radio" name="Q1" value="A" required> Science – Mathematics (PCM)</label>
+                <label><input type="radio" name="Q1" value="B"> Science – Biology (PCB)</label>
+                <label><input type="radio" name="Q1" value="C"> Commerce</label>
+                <label><input type="radio" name="Q1" value="D"> Humanities / Social Sciences</label>
+            </div>
+            
+            <button type="submit" class="gold-button">Generate My Roadmap</button>
+        </form>
+    </section>
+
+    <section id="recommendationOutput" class="roadmap-section hidden">
+        <h2>Your Personalized Career Roadmap</h2>
+        <div id="mindMapContainer"></div>
+        
+        <div id="streamContext" class="context-card">
+            </div>
+
+        <div id="topRecommendations">
+            </div>
+        
+    </section>
+
+    <script src="quiz.js"></script> </body>
+</html>

@@ -1,0 +1,230 @@
+/* Add to your existing style.css */
+
+/* --- Quiz Section Styling --- */
+.quiz-section {
+    padding: 60px 5%;
+    background-color: #0d0d0d; /* Dark background */
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.quiz-section h2 {
+    color: #ffcc00; /* Gold */
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+#quizForm {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.quiz-question {
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+}
+
+.quiz-question h3 {
+    color: #e0e0e0;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 10px;
+}
+
+.quiz-question label {
+    display: block;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+}
+
+.quiz-question label:hover {
+    background-color: #2a2a2a;
+}
+
+.quiz-question input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* --- Roadmap Output Section Styling --- */
+.roadmap-section {
+    padding: 60px 5%;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.roadmap-section h2 {
+    color: #ffcc00;
+    margin-bottom: 40px;
+}
+
+.context-card {
+    background-color: #0d0d0d;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border-left: 5px solid #ffcc00;
+}
+.context-card h3 {
+    color: #ffcc00;
+}
+
+.career-roadmap-card {
+    background-color: #0d0d0d;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    position: relative;
+    border: 1px solid #333;
+}
+
+.career-roadmap-card h4 {
+    font-family: 'Playfair Display', serif;
+    color: #ffcc00;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.gold-text {
+    color: #ffcc00;
+}
+
+.match-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ffcc00;
+    color: #0d0d0d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.roadmap-details p {
+    margin: 5px 0;
+}
+
+.roadmap-steps h5 {
+    color: #e0e0e0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-left: 3px solid #ffcc00;
+    padding-left: 10px;
+}
+
+.roadmap-steps ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.roadmap-steps li {
+    background-color: #1a1a1a;
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ======================================================= */
+/* CAREER PATHFINDER QUIZ & ROADMAP STYLES */
+/* ======================================================= */
+
+.quiz-section, .roadmap-section {
+    padding: 80px 5%; /* Increased padding for breathing room */
+    background-color: #000000; /* True Black Background */
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.roadmap-section h2 {
+    color: #FFCC00; /* Primary Gold */
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.4);
+}
+
+/* --- 1. Mind Map Container --- */
+#mindMapContainer {
+    width: 100%;
+    /* Ensure a consistent, generous height */
+    height: 700px; 
+    border: 4px solid #FFCC00; /* Thick Gold Border */
+    margin: 40px auto;
+    background-color: #0A0A0A; /* Very Dark Grey/Black inner background */
+    border-radius: 12px;
+    /* Deep shadow to make the map container stand out */
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.5), inset 0 0 10px rgba(255, 204, 0, 0.2); 
+    overflow: hidden; /* Ensure borders are clean */
+}
+
+/* --- 2. Stream Context Card (Intro Header) --- */
+.context-card {
+    background-color: #1a1a1a; 
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 5px solid #FFCC00; 
+    color: #D4D4D4;
+    text-align: left;
+}
+.context-card h3 {
+    color: #FFCC00;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6em;
+    margin-top: 0;
+}
+
+
+/* --- 3. Vis.js Network Overrides (Ensuring high contrast on labels and tooltips) --- */
+
+/* Node Text Labels - Enhance readability */
+/* vis.js generates canvas elements, so direct class styling is needed */
+.vis-label {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600 !important;
+    color: #F0F0F0 !important; /* Bright White */
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Custom Tooltip (Hover Info) Styling - Premium Look */
+.vis-tooltip {
+    /* Set max width for readable line lengths */
+    max-width: 300px; 
+    
+    background-color: #111111 !important; /* Super Dark Background */
+    color: #ffffff !important;
+    border: 1px solid #FFCC00 !important; /* Gold Border */
+    padding: 12px 18px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7), 0 0 5px rgba(255, 204, 0, 0.3) !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.95em !important;
+    line-height: 1.5 !important;
+    text-align: left !important;
+}
+
+.vis-tooltip b {
+    color: #FFD700; /* Highlight important text in gold */
+}
+
+.vis-tooltip hr {
+    border-color: #333333;
+    margin: 5px 0;
+}
